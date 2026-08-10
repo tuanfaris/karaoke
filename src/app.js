@@ -39,7 +39,7 @@ function countdown() {
 
 function shell(content) {
   return `
-    <div class="ambient one"></div><div class="ambient two"></div>
+    <div class="ambient one"></div><div class="ambient two"></div><div class="laser laser-a"></div><div class="laser laser-b"></div>
     <header class="topbar">
       <a class="brand" href="#" aria-label="KARAK Karaoke Night"><span class="brand-mark">K</span><span>KARAK<br><small>KARAOKE NIGHT</small></span></a>
       ${staffId ? `<button class="ghost" id="logoutBtn">Keluar</button>` : `<span class="date-chip">15 · 08 · 2026</span>`}
@@ -52,13 +52,15 @@ function renderLogin() {
   document.querySelector("#app").innerHTML = shell(`
     <section class="hero login-layout">
       <div class="hero-copy">
+        <div class="live-badge"><span></span> KARAOKE · DISCO · GOOD VIBES</div>
         <p class="eyebrow">Sabtu · 8:00 malam</p>
-        <h1>Suara anda.<br><em>Pentas kita.</em></h1>
-        <p class="lead">Daftar kehadiran dan pilih lagu untuk malam paling meriah tahun ini.</p>
+        <h1>Own the<br><em>spotlight.</em></h1>
+        <p class="lead">Satu pentas. Seribu memori. Daftar kehadiran dan pilih lagu untuk malam paling meriah tahun ini.</p>
         <div class="countdown"><span class="pulse"></span>${countdown()}</div>
+        <div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
       <div class="login-card card">
-        <div class="mic">♪</div>
+        <div class="mic">🎤</div>
         <p class="step">LANGKAH PERTAMA</p>
         <h2>Masuk dengan Staff ID</h2>
         <p>Tiada kata laluan diperlukan. Staff ID anda digunakan untuk mencari pendaftaran.</p>
