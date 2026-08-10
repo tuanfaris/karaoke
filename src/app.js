@@ -1,6 +1,6 @@
 const STORAGE_KEY = "karak-karaoke-2026";
 const SESSION_KEY = "karak-karaoke-session";
-const EVENT_DATE = new Date("2026-08-15T20:00:00+08:00");
+const EVENT_DATE = new Date("2026-08-15T11:00:00+08:00");
 
 const escapeHtml = (value = "") => String(value).replace(/[&<>'"]/g, (char) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
