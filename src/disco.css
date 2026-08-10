@@ -37,7 +37,7 @@ body{background:radial-gradient(circle at 12% 12%,#6b258f 0,transparent 34%),rad
   .topbar{height:76px}
   .hero{margin:0 auto 38px;padding:0 18px}
   .login-layout{min-height:auto;padding:32px;gap:28px;background:linear-gradient(180deg,#1a0c2b15 0%,#21103268 25%,#251437f2 47%,#1b1029 100%),url("../assets/karaoke-stage.png");background-repeat:no-repeat;background-size:100% 100%,auto 430px;background-position:center,76% top}
-  .hero-copy{padding-top:170px}
+  .hero-copy{padding-top:40px}
   .login-card{max-width:none}
   .event-strip{margin-top:0}
 }
@@ -46,7 +46,7 @@ body{background:radial-gradient(circle at 12% 12%,#6b258f 0,transparent 34%),rad
   .topbar{height:68px;padding:0 16px}.brand-mark{width:36px;height:36px}.date-chip{font-size:8px;padding:8px 10px}
   .hero{margin:0 auto 28px;padding:0 10px}
   .login-layout{padding:20px;border-radius:20px;gap:18px;background:linear-gradient(180deg,#190b2910 0%,#28123b48 25%,#2a1740f2 44%,#1b1029 100%),url("../assets/karaoke-stage.png");background-repeat:no-repeat;background-size:100% 100%,auto 310px;background-position:center,76% top}
-  .hero-copy{padding-top:105px}
+  .hero-copy{padding-top:0}
   .live-badge{margin-bottom:16px;background:#28153dcc;border-color:#ffffff55}
   .hero h1{font-size:48px;line-height:.9}.lead{font-size:15px;line-height:1.5}.countdown{font-size:12px;margin-top:12px;padding-top:13px}.equalizer{height:25px;margin-top:12px}
   .login-card{padding:22px;background:linear-gradient(145deg,#352046f2,#1c112af2)}.login-card .mic{margin-bottom:18px}.login-card form{margin-top:20px}
