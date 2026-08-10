@@ -64,14 +64,14 @@ function renderLogin() {
         <p>Tiada kata laluan diperlukan. Staff ID anda digunakan untuk mencari pendaftaran.</p>
         <form id="loginForm">
           <label for="staffId">Staff ID</label>
-          <div class="input-row"><input id="staffId" name="staffId" placeholder="Contoh: PWB12345" maxlength="20" autocomplete="username" required /><button type="submit">Teruskan <span>→</span></button></div>
+          <div class="input-row"><input id="staffId" name="staffId" placeholder="Contoh: 12345" maxlength="20" autocomplete="username" required /><button type="submit">Teruskan <span>→</span></button></div>
           <small>Belum mendaftar? Anda akan dibawa ke borang pendaftaran.</small>
         </form>
       </div>
     </section>
     <section class="event-strip">
       <div><small>TARIKH</small><strong>15 Ogos 2026</strong></div>
-      <div><small>MASA</small><strong>8:00 malam</strong></div>
+      <div><small>MASA</small><strong>11:00 PAGI</strong></div>
       <div><small>ACARA</small><strong>Karaoke &amp; Santai</strong></div>
     </section>`);
   document.querySelector("#loginForm").addEventListener("submit", (event) => {
@@ -96,7 +96,7 @@ function registrationForm() {
     <section class="form-card card narrow">
       <div class="form-title"><span>01</span><div><h2>Daftar Kehadiran</h2><p>Staff ID: <strong>${escapeHtml(staffId)}</strong></p></div></div>
       <form id="registerForm">
-        <label for="fullName">Nama penuh</label><input id="fullName" name="fullName" placeholder="Nama seperti dalam rekod staf" maxlength="80" required />
+        <label for="fullName">Nama</label><input id="fullName" name="fullName" placeholder="Nama" maxlength="80" required />
         <fieldset><legend>Kehadiran</legend><label class="choice"><input type="radio" name="attendance" value="Hadir" checked /><span><b>✓</b><strong>Ya, saya hadir</strong><small>Simpan tempat saya</small></span></label><label class="choice"><input type="radio" name="attendance" value="Tidak Hadir" /><span><b>×</b><strong>Tidak dapat hadir</strong><small>Kemas kini kemudian jika berubah</small></span></label></fieldset>
         <button class="primary full" type="submit">Simpan &amp; pilih lagu <span>→</span></button>
       </form>
