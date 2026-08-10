@@ -15,8 +15,11 @@ npx vite
 3. Pilih **GitHub Actions** di bahagian Source.
 4. Workflow akan menerbitkan laman secara automatik tanpa server atau proses build.
 
-## Tentang penyimpanan data
+## Supabase database setup
 
-GitHub Pages ialah hosting statik dan tidak boleh menulis terus ke fail `data/registrations.json` dalam repository. Versi ini menyimpan pendaftaran sebagai JSON di `localStorage` pelayar dan peserta boleh memuat turun rekod mereka sebagai fail JSON. Data kekal pada peranti/pelayar yang sama sahaja.
+1. Open the Supabase project dashboard.
+2. Open **SQL Editor** and create a new query.
+3. Paste and run the complete [`supabase/schema.sql`](supabase/schema.sql) file.
+4. The website then stores registrations centrally in Supabase; browser storage is only a local cache.
 
-Untuk satu senarai pusat yang dikongsi oleh semua staf, sistem memerlukan endpoint tulis yang selamat (contohnya GitHub API melalui serverless function). Jangan letakkan GitHub Personal Access Token di dalam JavaScript awam kerana token itu boleh dicuri.
+The publishable key in the frontend is intentionally public. Never add the Supabase secret key, service-role key, database password, or connection string to this repository.
